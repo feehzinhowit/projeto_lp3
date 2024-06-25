@@ -5,11 +5,15 @@
 
 
 {% block content %}
-<h1>Nossos produtos</h1>
-<p>Confira os produtos</p>
+<center>
+    <h1>Nossos produtos</h1>
+    <p>Confira os produtos</p>
+</center>
 
 {% for produto in produtos %}
-<h2>{{ produto.nome }}</h2>
-<p>{{ produto.descricao }}</p>
+<center>
+    <h2>{{ produto.nome }}</h2>
+    <p>{{ produto.descricao }}</p>
+</center>
 {% endfor %}
 {% endblock%}
