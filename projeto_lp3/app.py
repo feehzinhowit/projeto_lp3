@@ -2,9 +2,9 @@ from flask import Flask, render_template, request
 from validate_docbr import CPF, CNPJ
 
 lista_produtos = [
-        { "nome": "Coca-cola", "descricao": "mata a sede" },
-        { "nome": "Doritos", "descricao": "Suja a mão" },
-        { "nome": "Chocolate", "descricao": "Bom" }
+        { "nome": "Coca-cola", "descricao": "mata a sede", "img": "1"},
+        { "nome": "Doritos", "descricao": "Suja a mão", "img": "2"},
+        { "nome": "Chocolate", "descricao": "Bom", "img": "3"}
 ]
 
 app = Flask("minha app")

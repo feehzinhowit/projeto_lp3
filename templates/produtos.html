@@ -6,14 +6,20 @@
 
 {% block content %}
 <center>
+
+    
     <h1>Nossos produtos</h1>
     <p>Confira os produtos</p>
+
+
+    {% for produto in produtos %}
+
+    <div class = "container">
+        <img src="{{ url_for('static', filename='imagens/produto.jpg') }}" width="550px"></div>
+        <h2>{{ produto.nome }}</h2>
+        <p>{{ produto.descricao }}</p>
+    </div>
+    {% endfor %}
 </center>
 
-{% for produto in produtos %}
-<center>
-    <h2>{{ produto.nome }}</h2>
-    <p>{{ produto.descricao }}</p>
-</center>
-{% endfor %}
 {% endblock%}

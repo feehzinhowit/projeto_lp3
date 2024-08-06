@@ -5,7 +5,17 @@
 
 {% block content %}
 <center>
-    <h1>Entre em contato</h1>
+    <h1>Contato</h1>
     <p>Fale conosco</p>
+
+    <div class = "container">
+        <p>
+        <label for="name">Nome:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Motivo do contato:</label><br>
+        <input type="motivo" id="motivo" name="motivo"><br>
+        <input type="submit" value="Enviar">
+        </p>
+    </div>
 </center>
 {% endblock%}

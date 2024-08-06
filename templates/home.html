@@ -4,7 +4,10 @@
 
 {% block content %}
 <center>
-<h1>Home</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum laudantium, in molestias magnam vero itaque temporibus. Vitae, perspiciatis eligendi! Incidunt blanditiis quisquam dolor tempora similique quibusdam reiciendis molestiae nobis commodi.</p>
+    <h1>Home</h1>
+    
+    <div class="imagem"> <img src="{{ url_for('static', filename='imagens/itens.jpg') }}" width="550px"></div>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum laudantium, in molestias magnam vero itaque temporibus. Vitae, perspiciatis eligendi! Incidunt blanditiis quisquam dolor tempora similique quibusdam reiciendis molestiae nobis commodi.</p>
 </center>
 {% endblock%}
